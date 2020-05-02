@@ -1,8 +1,5 @@
 $(document).ready(function () {
-
   var APIKeyWeather = "c3dc07b6ca30d039abcea5db3779f996";
-
-
 
   function getWeather() {
     var queryURL =
@@ -21,6 +18,4 @@ $(document).ready(function () {
   }
 
   function formatDate() {}
-
-
 });
