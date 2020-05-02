@@ -10,12 +10,13 @@ $(document).ready(function () {
 
     $.ajax({
       type: "GET",
-      url: "https://app.ticketmaster.com/discovery/v2/events.json?size=1&apikey=" +
+      url:
+        "https://app.ticketmaster.com/discovery/v2/events.json?size=1&apikey=" +
         tKey +
         "&city=" +
-        city +
-        "?localStartDateTime=" +
-        date,
+        city,
+      //"?localStartDateTime=" +
+      //date,
       async: true,
       dataType: "json",
       success: function (json) {
