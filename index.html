@@ -1,117 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Date Nite</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Date Nite</title>
 
-    <link type="text/css" rel="stylesheet" href="css/bulma.min.css" />
-    <link type="text/css" rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <nav class="navbar is-danger">
-      <div class="navbar-brand is-size-2 column" id="logo">
-        DATE <span class="fas fa-heart"></span> NITE
-      </div>
-    </nav>
-
-    <main class="columns is-hidden" id="user-inputs">
-      <div class="column is-centered is-4 is-offset-one-quarter inputs">
-        <input
-          class="input is-medium is-info"
-          type="text"
-          placeholder="Enter City"
-          id="city-input"
-        />
-
-        <input
-          class="input is-medium is-info"
-          type="date"
-          placeholder="Enter Date"
-          id="date-input"
-        />
-
-        <label class="checkbox">
-          <input type="checkbox" id="restaurants-select" />
-          Restraunts
-        </label>
-
-        <label class="checkbox">
-          <input type="checkbox" id="bars-select" />
-          Bars
-        </label>
-
-        <label class="checkbox">
-          <input type="checkbox" id="events-select" />
-          Events
-        </label>
-
-        <button class="button is-primary" id="submit-button">
-          Plan My Date
-        </button>
-      </div>
-    </main>
-
-    <div class="container" id="date-results">
-      <section class="columns">
-        <div class="column">
-          <div class="card">
-            <div class="card-content">
-              <p class="title is-4">Restaurants</p>
-              <div class="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus nec iaculis mauris.
-              </div>
+        <link type="text/css" rel="stylesheet" href="css/bulma.min.css" />
+        <link type="text/css" rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <nav class="navbar is-danger">
+            <div class="navbar-brand is-size-2 column" id="logo">
+                DATE <span class="fas fa-heart"></span> NITE
             </div>
-          </div>
+        </nav>
 
-          <div class="card">
-            <div class="card-content">
-              <p class="title is-4">Bars</p>
-              <div class="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus nec iaculis mauris.
-              </div>
-            </div>
-          </div>
+        <main class="columns is-hidden" id="user-inputs">
+            <div class="column is-centered is-4 is-offset-one-quarter inputs">
+                <input
+                    class="input is-medium is-info"
+                    type="text"
+                    placeholder="Enter City"
+                    id="city-input"
+                    />
 
-          <div class="card">
-            <div class="card-content">
-              <p class="title is-4">Events</p>
-              <div class="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus nec iaculis mauris.
-              </div>
+                <input
+                    class="input is-medium is-info"
+                    type="date"
+                    placeholder="Enter Date"
+                    id="date-input"
+                    />
+
+                <label class="checkbox">
+                    <input type="checkbox" id="restaurants-select" />
+                    Restraunts
+                </label>
+
+                <label class="checkbox">
+                    <input type="checkbox" id="bars-select" />
+                    Bars
+                </label>
+
+                <label class="checkbox">
+                    <input type="checkbox" id="events-select" />
+                    Events
+                </label>
+
+                <button class="button is-primary" id="submit-button">
+                    Plan My Date
+                </button>
             </div>
-          </div>
+        </main>
+
+        <div class="container" id="date-results">
+            <section class="columns">
+                <div class="column">
+                    <div class="card">
+                        <div class="card-content">
+                            <p class="title is-4">Restaurants</p>
+                            <div class="content">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit.
+                                Phasellus nec iaculis mauris.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <p class="title is-4">Bars</p>
+                            <div class="content">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit.
+                                Phasellus nec iaculis mauris.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <p class="title is-4">Events</p>
+                            <div class="content">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit.
+                                Phasellus nec iaculis mauris.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="card-content">
+                            <p class="title is-3" id="date-of">&lt;Date Here&gt;</p>
+                            <div class="content">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit.
+                                Phasellus nec iaculis mauris.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="columns column is-centered">
+                <button class="button is-primary" id="go-back">
+                    Plan Another Date
+                </button>
+            </div>
         </div>
-        <div class="column">
-          <div class="card">
-            <div class="card-content">
-              <p class="title is-3" id="date-of">&lt;Date Here&gt;</p>
-              <div class="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus nec iaculis mauris.
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <div class="columns column is-centered">
-        <button class="button is-primary" id="go-back">
-          Plan Another Date
-        </button>
-      </div>
-    </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
-    ></script>
-
-    <script src="js/temp.js"></script>
-    <script src="js/script.js"></script>
-  </body>
 </html>
