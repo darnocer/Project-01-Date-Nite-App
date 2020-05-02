@@ -1,0 +1,20 @@
+#logo {
+  text-align: center;
+}
+
+.input {
+  margin: 10px;
+}
+
+::-webkit-datetime-edit-text {
+  opacity: 0.5;
+}
+::-webkit-datetime-edit-month-field {
+  opacity: 0.5;
+}
+::-webkit-datetime-edit-day-field {
+  opacity: 0.5;
+}
+::-webkit-datetime-edit-year-field {
+  opacity: 0.5;
+}
