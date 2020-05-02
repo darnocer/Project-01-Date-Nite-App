@@ -1,13 +1,18 @@
 $(document).ready(function () {
-    $("#search").on("click", function () {
+    $("#submit-button").on("click", function () {
         event.preventDefault();
         console.log("button was clicked");
-        var cityInput = $("#search-input").val();
-
+        $("#user-inputs").addClass("is-hidden");
+        $("#date-results").removeClass("is-hidden");
+        var cityInput = $("#city-input").val();
+        var userDate = $("#date-input").val();
+        getWeather();
+        getRestaurants();
         console.log(cityInput);
     });
 });
-$("#search").on("click", function () {
+
+function getRestaurants() {
     event.preventDefault();
 
 
@@ -26,4 +31,11 @@ $("#search").on("click", function () {
         console.log(response);
         console.log(response);
     });
+};
+
+$("#go-back").click(function (event) {
+
+
+    $("#user-inputs").removeClass("is-hidden");
+    $("#date-results").addClass("is-hidden");
 });
