@@ -4,7 +4,7 @@ var tKey = config.ticketMaster;
 
 $(document).ready(function () {
   function getEvent() {
-    var APIKeyEvents = "Ds8xghq3sGbqB3ntRWxevADM1AJPkuzm";
+    // var APIKeyEvents = "Ds8xghq3sGbqB3ntRWxevADM1AJPkuzm";
     var city = "denver";
     var date = "2021-09-18";
 
