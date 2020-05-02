@@ -1,3 +1,7 @@
+var gKey = config.google;
+var wKey = config.weather;
+var tKey = config.ticketMaster;
+
 $(document).ready(function () {
   $("#submit-button").on("click", function () {
     event.preventDefault();
@@ -20,7 +24,7 @@ $(document).ready(function () {
       corsURL +
       "https://maps.googleapis.com/maps/api/place/textsearch/json?query=" +
       cityInput +
-      "+restaurants&key=AIzaSyCrIg9cdwW2tu8Vgqh2YgT_myz7NMmom5o";
+      "+restaurants&key=" + gKey;
 
     $.ajax({
       url: queryURL,

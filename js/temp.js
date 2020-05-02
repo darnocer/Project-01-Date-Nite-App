@@ -1,5 +1,9 @@
+var gKey = config.google;
+var wKey = config.weather;
+var tKey = config.ticketMaster;
+
 $(document).ready(function () {
-  var APIKeyWeather = "c3dc07b6ca30d039abcea5db3779f996";
+  // var APIKeyWeather = "c3dc07b6ca30d039abcea5db3779f996";
   // var userCity = $("#city-input").val();
   // var userDate = $("#date-input").val();
 
@@ -12,7 +16,7 @@ $(document).ready(function () {
       "https://api.openweathermap.org/data/2.5/forecast?q=" +
       userCity +
       "&appid=" +
-      APIKeyWeather;
+      wKey;
 
     $.ajax({
       url: queryURL,

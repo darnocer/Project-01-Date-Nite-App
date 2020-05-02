@@ -1,3 +1,7 @@
+var gKey = config.google;
+var wKey = config.weather;
+var tKey = config.ticketMaster;
+
 $(document).ready(function () {
   function getEvent() {
     var APIKeyEvents = "Ds8xghq3sGbqB3ntRWxevADM1AJPkuzm";
@@ -6,9 +10,8 @@ $(document).ready(function () {
 
     $.ajax({
       type: "GET",
-      url:
-        "https://app.ticketmaster.com/discovery/v2/events.json?size=1&apikey=" +
-        APIKeyEvents +
+      url: "https://app.ticketmaster.com/discovery/v2/events.json?size=1&apikey=" +
+        tKey +
         "&city=" +
         city +
         "?localStartDateTime=" +
