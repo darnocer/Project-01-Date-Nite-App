@@ -6,9 +6,9 @@ $(document).ready(function () {
     $("#date-results").removeClass("is-hidden");
     var cityInput = $("#city-input").val();
     var userDate = $("#date-input").val();
-    getWeather();
     getRestaurants();
     console.log(cityInput);
+    console.log("user date: " + userDate);
   });
 
   function getRestaurants() {

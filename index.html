@@ -8,6 +8,13 @@
         <link type="text/css" rel="stylesheet" href="css/bulma.min.css" />
         <link type="text/css" rel="stylesheet" href="css/style.css" />
 
+        <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
@@ -68,7 +75,7 @@
                     <div class="card">
                         <div class="card-content">
                             <p class="title is-4">Restaurants</p>
-                            <div class="content">
+                            <div class="content" id="restaurants">
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit.
                                 Phasellus nec iaculis mauris.
@@ -79,7 +86,7 @@
                     <div class="card">
                         <div class="card-content">
                             <p class="title is-4">Bars</p>
-                            <div class="content">
+                            <div class="content" id="bars">
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit.
                                 Phasellus nec iaculis mauris.
@@ -90,10 +97,7 @@
                     <div class="card">
                         <div class="card-content">
                             <p class="title is-4">Events</p>
-                            <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit.
-                                Phasellus nec iaculis mauris.
+                            <div class="content" id="events">
                             </div>
                         </div>
                     </div>
@@ -101,11 +105,10 @@
                 <div class="column">
                     <div class="card">
                         <div class="card-content">
-                            <p class="title is-3" id="date-of">&lt;Date Here&gt;</p>
-                            <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit.
-                                Phasellus nec iaculis mauris.
+                            <p class="title is-3" id="date-of"></p>
+                            <div class="content" id="weather">
+                                <span id="weather-icon"></span>
+                                <p class="title is-5"><span id="temp"></span></p>
                             </div>
                         </div>
                     </div>

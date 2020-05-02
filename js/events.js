@@ -2,7 +2,7 @@ $(document).ready(function () {
   function getEvent() {
     var APIKeyEvents = "Ds8xghq3sGbqB3ntRWxevADM1AJPkuzm";
     var city = "denver";
-    var date = "2020-08-08";
+    var date = "2021-09-18";
 
     $.ajax({
       type: "GET",
@@ -10,7 +10,9 @@ $(document).ready(function () {
         "https://app.ticketmaster.com/discovery/v2/events.json?size=1&apikey=" +
         APIKeyEvents +
         "&city=" +
-        city,
+        city +
+        "?localStartDateTime=" +
+        date,
       async: true,
       dataType: "json",
       success: function (json) {
