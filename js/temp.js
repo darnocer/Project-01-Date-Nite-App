@@ -40,14 +40,10 @@ $(document).ready(function () {
 
       $("#temp").html("Temperature: " + tempF.toFixed(1) + " &deg;" + "F");
 
-      console.log(tempK);
-      console.log(weather);
-
       $("#weather-icon").html("");
       renderIcons();
       weatherIcon = $("<img>").attr("src", imgURL);
       weatherIcon.attr("alt", "weather icon");
-      console.log(weatherIcon);
 
       $("#weather-icon").append(weatherIcon);
     });
