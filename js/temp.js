@@ -54,11 +54,8 @@ $(document).ready(function () {
   }
 
   function formatDate() {
-    // var formattedDate = new Date(userDate).toLocaleDateString();
     var formattedDate = moment(userDate, "Y-M-D").format("dddd MMMM D Y");
-
     $("#date-of").text("Weather for " + formattedDate);
-    console.log(formattedDate);
   }
 
   function renderIcons() {
