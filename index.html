@@ -15,17 +15,15 @@
             crossorigin="anonymous"
             />
 
+            <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+
+
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
       
-              <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 
-        <script type='text/javascript' src='js/config.js'></script>
-      
-        <script
-            src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        <!-- <script type='text/javascript' src='js/config.js'></script> -->
 
         <script src="js/events.js"></script>
         <script src="js/temp.js"></script>
@@ -36,75 +34,80 @@
     <body>
         <nav class="navbar is-danger">
             <div class="navbar-brand is-size-2 column" id="logo">
-                DATE <span class="fas fa-heart"></span> NITE
+                date <span class="fas fa-heart"></span> nite
             </div>
         </nav>
 
-        <main class="columns is-hidden" id="user-inputs">
-            <div class="column is-centered is-4 is-offset-one-quarter inputs">
+        <main class="columns is-centered" id="user-inputs">
+          
+            <div class="column is-4 inputs">
+
+              <div class="columns is-centered">
+                <p class="subtitle is-3" id="greeting">Where do you want to go?</p>
+              </div>
+
                 <input
-                    class="input is-medium is-info"
+                    class="input is-medium is-danger"
                     type="text"
                     placeholder="Enter City"
                     id="city-input"
                     />
 
                 <input
-                    class="input is-medium is-info"
+                    class="input is-medium is-danger"
                     type="date"
                     placeholder="Enter Date"
                     id="date-input"
                     />
-
+              <div class = "columns is-centered">
                 <label class="checkbox">
-                    <input type="checkbox" id="restaurants-select" />
+                    <input type="checkbox" class="checkboxes" id="restaurants-select" />
                     Restraunts
                 </label>
 
                 <label class="checkbox">
-                    <input type="checkbox" id="bars-select" />
+                    <input type="checkbox" class="checkboxes" id="bars-select" />
                     Bars
                 </label>
 
                 <label class="checkbox">
-                    <input type="checkbox" id="events-select" />
+                    <input type="checkbox" class="checkboxes" id="events-select" />
                     Events
                 </label>
-
-                <button class="button is-primary" id="submit-button">
-                    Plan My Date
-                </button>
+              </div>
+                
+                <div class = "columns is-centered">
+                    <button class="button is-danger" id="submit-button">
+                        Plan My Date
+                    </button>
+              </div>
             </div>
         </main>
 
-        <div class="container" id="date-results">
+        <div class="container is-hidden" id="date-results">
             <section class="columns">
                 <div class="column">
                     <div class="card">
                         <div class="card-content">
-                            <p class="title is-4">Restaurants</p>
+                            <h2 class="title is-4">Restaurants</h2>
                             <div class="content" id="restaurants">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit.
-                                Phasellus nec iaculis mauris.
+
                             </div>
                         </div>
                     </div>
 
                     <div class="card">
                         <div class="card-content">
-                            <p class="title is-4">Bars</p>
+                            <h2 class="title is-4">Bars</h2>
                             <div class="content" id="bars">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit.
-                                Phasellus nec iaculis mauris.
+
                             </div>
                         </div>
                     </div>
 
                     <div class="card">
                         <div class="card-content">
-                            <p class="title is-4">Events</p>
+                            <h2 class="title is-4">Events</h2>
                             <div class="content" id="events">
                             </div>
                         </div>
@@ -113,7 +116,7 @@
                 <div class="column">
                     <div class="card">
                         <div class="card-content">
-                            <p class="title is-3" id="date-of"></p>
+                            <h2 class="title is-4" id="date-of"></h2>
                             <div class="content" id="weather">
                                 <span id="weather-icon"></span>
                                 <p class="title is-5"><span id="temp"></span></p>
@@ -123,10 +126,11 @@
                 </div>
             </section>
             <div class="columns column is-centered">
-                <button class="button is-primary" id="go-back">
+                <button class="button is-danger" id="go-back">
                     Plan Another Date
                 </button>
             </div>
         </div>
+
 
     </html>

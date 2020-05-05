@@ -1,9 +1,45 @@
+.navbar {
+  background: rgb(253, 29, 71);
+  background: linear-gradient(
+    90deg,
+    rgba(253, 29, 71, 1) 23%,
+    rgba(252, 69, 187, 1) 100%
+  );
+}
+
+.card {
+  margin: 10px;
+}
+
 #logo {
   text-align: center;
+  font-family: "Pacifico", cursive;
+}
+
+#greeting {
+  font-family: "Pacifico", cursive;
 }
 
 .input {
   margin: 10px;
+}
+
+.checkboxes {
+  margin: 10px;
+}
+
+#submit-button {
+  margin: 10px;
+}
+
+#user-inputs {
+  position: relative;
+  top: 150px;
+}
+
+#date-results {
+  position: relative;
+  top: 125px;
 }
 
 ::-webkit-datetime-edit-text {
