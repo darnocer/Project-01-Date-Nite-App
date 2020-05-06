@@ -1,12 +1,4 @@
-<<<<<<< HEAD
-$(document).ready(function () {
-=======
-// var gKey = config.google;
-// var wKey = config.weather;
-// var tKey = config.ticketMaster;
-
 $("document").ready(function () {
->>>>>>> e84e18419b5d38f462faf6e0edf08235e8d726fc
   function getEvent() {
     var APIKeyEvents = "Ds8xghq3sGbqB3ntRWxevADM1AJPkuzm";
     var city = "Chicago";
