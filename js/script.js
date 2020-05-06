@@ -1,13 +1,18 @@
 var APIKeyGoogle = "AIzaSyDLnmaYaDkfgDwgSHFbipNdh5ztO6nFE3E";
 
+
+
 $(document).ready(function () {
+  var cityInput;
+  var userDate;
+
   $("#submit-button").on("click", function () {
     event.preventDefault();
     console.log("button was clicked");
     $("#user-inputs").addClass("is-hidden");
     $("#date-results").removeClass("is-hidden");
-    var cityInput = $("#city-input").val();
-    var userDate = $("#date-input").val();
+    cityInput = $("#city-input").val();
+    userDate = $("#date-input").val();
     getRestaurants();
     console.log(cityInput);
     console.log("user date: " + userDate);
