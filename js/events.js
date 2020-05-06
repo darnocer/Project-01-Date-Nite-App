@@ -54,34 +54,27 @@ $("document").ready(function () {
 
         //MOUAD functions
 
+        var eventDetails = $(".event-details");
+        console.log(eventDetails);
+
         for (i = 0; i < 3; i++) {
-          var nameEvent = $("<p>").text(
-            " Event Name " + response._embedded.events[i].name
-          );
-          var dateEvent = $("<p>").text(
-            " Event Date " + response._embedded.events[i].dates.start.localDate
-          );
+          var nameEvent = response._embedded.events[i].name;
 
-          var priceEvent = $("<p>").text(
-            " Price Range " +
-              "$" +
-              response._embedded.events[i].priceRanges[0].min +
-              " - " +
-              "$" +
-              response._embedded.events[i].priceRanges[0].max
-          );
-          var linkEvent = $("<p>").text(
-            " Purchase here " + response._embedded.events[i].url
-          );
+          var dateEvent = response._embedded.events[i].dates.start.localDate;
 
-          $("#events").append(nameEvent);
+          var priceEventMin = response._embedded.events[i].priceRanges[0].min;
 
-          $("#events").append(dateEvent);
+          var priceEventMax = response._embedded.events[i].priceRanges[0].max;
 
-          $("#events").append(priceEvent);
+          var linkEvent = response._embedded.events[i].url;
 
-          $("#events").append(linkEvent);
+          eventDetails[i].querySelector(".event-name").textContent = nameEvent;
+          eventDetails[i].querySelector(".event-date").textContent = dateEvent;
+          eventDetails[i].querySelector(".event-price").textContent =
+            "$" + priceEventMin + "-" + "$" + priceEventMax;
+          eventDetails[i].querySelector(".event-link").textContent = linkEvent;
         }
+
         //URL Image
         // console.log(response._embedded.events[0].images[2].url);
 
