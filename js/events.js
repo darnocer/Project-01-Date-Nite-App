@@ -1,6 +1,4 @@
-
 $("document").ready(function () {
-
   function getEvent() {
     var APIKeyEvents = "Ds8xghq3sGbqB3ntRWxevADM1AJPkuzm";
     var city = "Chicago";
