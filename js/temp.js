@@ -5,7 +5,10 @@ $(document).ready(function () {
     event.preventDefault();
     userCity = $("#city-input").val();
     userDate = $("#date-input").val();
-    validate();
+    // validate();
+    containers();
+    getWeather();
+    formatDate();
   });
 
   // function validate() {
@@ -17,10 +20,6 @@ $(document).ready(function () {
   //     formatDate();
   //   }
   // }
-
-  containers();
-  getWeather();
-  formatDate();
 
   var weather;
 
