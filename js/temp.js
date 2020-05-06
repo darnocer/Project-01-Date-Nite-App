@@ -99,5 +99,8 @@ $(document).ready(function () {
     imgURL = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
   }
 
-  // getWeather();
+
+  getWeather();
+  formatDate();
 });
+
