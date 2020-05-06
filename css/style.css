@@ -48,6 +48,14 @@
   font-size: 0.9em;
 }
 
+.validate {
+  font-style: italic;
+  color: red;
+  font-size: 0.7em;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
 ::-webkit-datetime-edit-text {
   opacity: 0.5;
 }

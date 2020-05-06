@@ -7,11 +7,11 @@ $(document).ready(function () {
   $("#submit-button").on("click", function () {
     event.preventDefault();
     console.log("button was clicked");
-    $("#user-inputs").addClass("is-hidden");
-    $("#date-results").removeClass("is-hidden");
+    // $("#user-inputs").addClass("is-hidden");
+    // $("#date-results").removeClass("is-hidden");
     cityInput = $("#city-input").val();
     userDate = $("#date-input").val();
-    getWeather();
+    getRestaurants();
     console.log(cityInput);
     console.log("user date: " + userDate);
   });
