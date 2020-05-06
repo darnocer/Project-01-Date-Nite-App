@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 $(document).ready(function () {
+=======
+// var gKey = config.google;
+// var wKey = config.weather;
+// var tKey = config.ticketMaster;
+
+$("document").ready(function () {
+>>>>>>> e84e18419b5d38f462faf6e0edf08235e8d726fc
   function getEvent() {
     var APIKeyEvents = "Ds8xghq3sGbqB3ntRWxevADM1AJPkuzm";
-    var city = "denver";
-    var date = "2021-09-18";
+    var city = "Chicago";
+    var date = "2021-09-16";
 
     $.ajax({
       type: "GET",
@@ -17,7 +25,7 @@ $(document).ready(function () {
       success: function (response) {
         console.log(response);
 
-        // event name
+        //event name
         console.log(response._embedded.events[0].name);
 
         //event date
@@ -31,6 +39,37 @@ $(document).ready(function () {
             "$" +
             response._embedded.events[0].priceRanges[0].max
         );
+
+        //MOUAD functions
+
+        var dateEvent = $("<p>").text(
+          " Event Name " + response._embedded.events[0].name
+        );
+        var priceEvent = $("<p>").text(
+          " Price Range " +
+            response._embedded.events[0].priceRanges[0].min +
+            " - " +
+            "$" +
+            response._embedded.events[0].priceRanges[0].max
+        );
+        var linkEvent = $("<p>").text(
+          " Purchase here " + response._embedded.events[0].url
+        );
+        $("#events").append(dateEvent);
+
+        $("#events").append(priceEvent);
+
+        $("#events").append(linkEvent);
+
+        //URL Image
+        console.log(response._embedded.events[0], images[2].url);
+
+        // var photoEvent = $("<p>").text(
+        //   response._embedded.events[0],
+        //   images[2].url
+        // );
+
+        // ================================================
 
         // link to tickets
         console.log(response._embedded.events[0].url);
