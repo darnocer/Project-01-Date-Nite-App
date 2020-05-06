@@ -1,23 +1,27 @@
 $(document).ready(function () {
   var APIKeyWeather = "c3dc07b6ca30d039abcea5db3779f996";
-  // var userCity = $("#city-input").val();
-  // var userDate = $("#date-input").val();
 
   $("#submit-button").on("click", function () {
     event.preventDefault();
-    console.log("button was clicked");
-    $("#user-inputs").addClass("is-hidden");
-    $("#date-results").removeClass("is-hidden");
     userCity = $("#city-input").val();
     userDate = $("#date-input").val();
-    getWeather();
-    formatDate();
-    console.log(cityInput);
-    console.log("user date: " + userDate);
+    validate();
   });
 
-  // var userCity = "denver";
-  // var userDate = "2020-05-06";
+  // function validate() {
+  //   if (userCity === "" || userDate === "") {
+  //     $(".validate").removeClass("is-hidden");
+  //   } else {
+  //     containers();
+  //     getWeather();
+  //     formatDate();
+  //   }
+  // }
+
+  containers();
+  getWeather();
+  formatDate();
+
   var weather;
 
   function getWeather() {
@@ -99,5 +103,8 @@ $(document).ready(function () {
     imgURL = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
   }
 
-  // getWeather();
+  function containers() {
+    $("#user-inputs").addClass("is-hidden");
+    $("#date-results").removeClass("is-hidden");
+  }
 });
