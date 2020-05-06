@@ -1,6 +1,6 @@
-var gKey = config.google;
-var wKey = config.weather;
-var tKey = config.ticketMaster;
+// var gKey = config.google;
+// var wKey = config.weather;
+// var tKey = config.ticketMaster;
 
 $(document).ready(function () {
   $("#submit-button").on("click", function () {
@@ -19,12 +19,12 @@ $(document).ready(function () {
     event.preventDefault();
 
     let corsURL = "https://cors-anywhere.herokuapp.com/";
-    let cityInput = $("#search-input").val();
     var queryURL =
       corsURL +
       "https://maps.googleapis.com/maps/api/place/textsearch/json?query=" +
       cityInput +
-      "+restaurants&key=" + gKey;
+      "+restaurants&key=" +
+      gKey;
 
     $.ajax({
       url: queryURL,
