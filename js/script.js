@@ -32,6 +32,11 @@ $(document).ready(function () {
       method: "GET",
     }).then(function (response) {
       console.log(response);
+      console.log("test test");
+      console.log(response.results[0].name);
+
+      console.log(response.results[0].formatted_address);
+      console.log(response.results[0].rating);
     });
   }
 
@@ -40,3 +45,9 @@ $(document).ready(function () {
     $("#date-results").addClass("is-hidden");
   });
 });
+
+
+// var NameE = $("<p>").text(
+//   "Name " + response.results[0].name 
+// )
+
