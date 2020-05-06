@@ -7,8 +7,8 @@ $(document).ready(function () {
   $("#submit-button").on("click", function () {
     event.preventDefault();
     console.log("button was clicked");
-    // $("#user-inputs").addClass("is-hidden");
-    // $("#date-results").removeClass("is-hidden");
+    $("#user-inputs").addClass("is-hidden");
+    $("#date-results").removeClass("is-hidden");
     cityInput = $("#city-input").val();
     userDate = $("#date-input").val();
     getRestaurants();
@@ -32,11 +32,6 @@ $(document).ready(function () {
       method: "GET",
     }).then(function (response) {
       console.log(response);
-      console.log("test test");
-      console.log(response.results[0].name);
-
-      console.log(response.results[0].formatted_address);
-      console.log(response.results[0].rating);
     });
   }
 
@@ -45,9 +40,3 @@ $(document).ready(function () {
     $("#date-results").addClass("is-hidden");
   });
 });
-
-
-// var NameE = $("<p>").text(
-//   "Name " + response.results[0].name 
-// )
-
