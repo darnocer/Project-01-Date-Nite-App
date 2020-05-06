@@ -1,7 +1,3 @@
-// var gKey = config.google;
-// var wKey = config.weather;
-// var tKey = config.ticketMaster;
-
 $(document).ready(function () {
   function getEvent() {
     var APIKeyEvents = "Ds8xghq3sGbqB3ntRWxevADM1AJPkuzm";

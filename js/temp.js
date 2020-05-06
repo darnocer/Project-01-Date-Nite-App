@@ -1,14 +1,10 @@
-// var gKey = config.google;
-// var wKey = config.weather;
-// var tKey = config.ticketMaster;
-
 $(document).ready(function () {
   var APIKeyWeather = "c3dc07b6ca30d039abcea5db3779f996";
   // var userCity = $("#city-input").val();
   // var userDate = $("#date-input").val();
 
   var userCity = "denver";
-  var userDate = "2020-05-05";
+  var userDate = "2020-05-06";
   var weather;
 
   function getWeather() {
@@ -50,7 +46,7 @@ $(document).ready(function () {
   }
 
   function formatDate() {
-    var formattedDate = moment(userDate, "Y-M-D").format("dddd MMMM D Y");
+    var formattedDate = moment(userDate, "Y-M-D").format("dddd, MMMM D");
     $("#date-of").text("Weather for " + formattedDate);
   }
 
