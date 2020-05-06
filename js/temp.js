@@ -103,8 +103,14 @@ $(document).ready(function () {
     imgURL = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
   }
 
+
   function containers() {
     $("#user-inputs").addClass("is-hidden");
     $("#date-results").removeClass("is-hidden");
   }
+
+
+ 
+
 });
+
