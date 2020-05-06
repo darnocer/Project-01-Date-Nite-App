@@ -42,6 +42,12 @@
   top: 125px;
 }
 
+.unavailable {
+  font-style: italic;
+  color: lightgrey;
+  font-size: 0.9em;
+}
+
 ::-webkit-datetime-edit-text {
   opacity: 0.5;
 }
@@ -54,71 +60,3 @@
 ::-webkit-datetime-edit-year-field {
   opacity: 0.5;
 }
-
-/* Customize the label (the container)
-.checkbox {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/* Hide the browser's default checkbox */
-/* .checkbox input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-} */
-
-/* Create a custom checkbox */
-/* .checkboxes {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #eee;
-} */
-
-/* On mouse-over, add a grey background color */
-/* .checkbox:hover input ~ .checkboxes {
-  background-color: #ccc;
-} */
-
-/* When the checkbox is checked, add a blue background */
-/* .checkbox input:checked ~ .checkboxes {
-  background-color: #2196f3;
-} */
-
-/* Create the checkboxes/indicator (hidden when not checked) */
-/* .checkboxes:after {
-  content: "";
-  position: absolute;
-  display: none;
-} */
-
-/* Show the checkboxes when checked */
-/* .checkbox input:checked ~ .checkboxes:after {
-  display: block;
-} */
-
-/* Style the checkboxes/indicator */
-/* .checkbox .checkboxes:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-} */

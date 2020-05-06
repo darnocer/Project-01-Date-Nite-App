@@ -1,7 +1,5 @@
 var APIKeyGoogle = "AIzaSyDLnmaYaDkfgDwgSHFbipNdh5ztO6nFE3E";
 
-
-
 $(document).ready(function () {
   var cityInput;
   var userDate;
@@ -13,7 +11,7 @@ $(document).ready(function () {
     $("#date-results").removeClass("is-hidden");
     cityInput = $("#city-input").val();
     userDate = $("#date-input").val();
-    getRestaurants();
+    getWeather();
     console.log(cityInput);
     console.log("user date: " + userDate);
   });
@@ -48,6 +46,8 @@ $(document).ready(function () {
   });
 });
 
+
 // var NameE = $("<p>").text(
 //   "Name " + response.results[0].name 
 // )
+
