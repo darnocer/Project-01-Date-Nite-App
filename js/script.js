@@ -1,6 +1,4 @@
-// var gKey = config.google;
-// var wKey = config.weather;
-// var tKey = config.ticketMaster;
+var APIKeyGoogle = "AIzaSyDLnmaYaDkfgDwgSHFbipNdh5ztO6nFE3E";
 
 $(document).ready(function () {
   $("#submit-button").on("click", function () {
@@ -24,13 +22,12 @@ $(document).ready(function () {
       "https://maps.googleapis.com/maps/api/place/textsearch/json?query=" +
       cityInput +
       "+restaurants&key=" +
-      gKey;
+      APIKeyGoogle;
 
     $.ajax({
       url: queryURL,
       method: "GET",
     }).then(function (response) {
-      console.log(response);
       console.log(response);
     });
   }
