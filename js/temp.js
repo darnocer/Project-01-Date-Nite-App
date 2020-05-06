@@ -102,26 +102,8 @@ $(document).ready(function () {
     imgURL = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
   }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> 82b47eb2036f5ce4fc04a0ec9ba445f59c27a06c
   function containers() {
     $("#user-inputs").addClass("is-hidden");
     $("#date-results").removeClass("is-hidden");
   }
-<<<<<<< HEAD
-=======
-
-  getWeather();
-  formatDate();
->>>>>>> b4f504cfc0ff3f5fdbfb78c76b54ab4905df7a02
-=======
-
-
- 
-
->>>>>>> 82b47eb2036f5ce4fc04a0ec9ba445f59c27a06c
 });
-
