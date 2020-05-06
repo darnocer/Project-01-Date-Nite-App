@@ -12,7 +12,7 @@
 }
 
 #logo {
-  text-align: center;
+  text-align: center !important;
   font-family: "Pacifico", cursive;
 }
 
