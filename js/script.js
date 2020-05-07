@@ -12,6 +12,7 @@ $(document).ready(function () {
     cityInput = $("#city-input").val();
     userDate = $("#date-input").val();
     getRestaurants();
+    getBars();
     console.log(cityInput);
     console.log("user date: " + userDate);
   });
@@ -32,6 +33,57 @@ $(document).ready(function () {
       method: "GET",
     }).then(function (response) {
       console.log(response);
+      console.log("test test");
+      // console.log(response.results[0].name);
+      // console.log(response.results[0].formatted_address);
+      // console.log(response.results[0].rating);
+      var restaurantDetails = $(".restaurant-details");
+      for (i = 0; i < 3; i++) {
+        var nameRestaurant = [response.results[i].name];
+        var ratingRestaurant = [response.results[i].formatted_address];
+        var addressRestaurant = [response.results[i].rating];
+        restaurantDetails[i].querySelector(
+          ".restaurant-name"
+        ).textContent = nameRestaurant;
+        restaurantDetails[i].querySelector(
+          ".restaurant-rating"
+        ).textContent = ratingRestaurant;
+        restaurantDetails[i].querySelector(
+          ".restaurant-address"
+        ).textContent = addressRestaurant;
+      }
+    });
+  }
+
+  function getBars() {
+    event.preventDefault();
+
+    let corsURL = "https://cors-anywhere.herokuapp.com/";
+    var barsURL =
+      corsURL +
+      "https://maps.googleapis.com/maps/api/place/textsearch/json?query=" +
+      cityInput +
+      "+bars&key=" +
+      APIKeyGoogle;
+
+    $.ajax({
+      url: barsURL,
+      method: "GET",
+    }).then(function (response) {
+      console.log(response);
+      console.log("test test");
+      // console.log(response.results[0].name);
+      // console.log(response.results[0].formatted_address);
+      // console.log(response.results[0].rating);
+      var barDetails = $(".bar-details");
+      for (i = 0; i < 3; i++) {
+        var nameBar = [response.results[i].name];
+        var ratingBar = [response.results[i].formatted_address];
+        var addressBar = [response.results[i].rating];
+        barDetails[i].querySelector(".bar-name").textContent = nameBar;
+        barDetails[i].querySelector(".bar-rating").textContent = ratingBar;
+        barDetails[i].querySelector(".bar-address").textContent = addressBar;
+      }
     });
   }
 
