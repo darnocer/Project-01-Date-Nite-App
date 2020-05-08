@@ -17,7 +17,9 @@
 
         <link
             href="https://fonts.googleapis.com/css?family=Pacifico&display=swap"
-            rel="stylesheet">   
+            rel="stylesheet"> 
+            
+        <link href="https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap" rel="stylesheet">
 
 
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -27,8 +29,6 @@
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 
-        <script src="js/events.js"></script>
-        <script src="js/temp.js"></script>
         <script src="js/script.js"></script>
 
 
@@ -78,6 +78,20 @@
         </main>
 
         <div class="container is-hidden" id="date-results">
+            <div class="columns">
+            <div class="column">
+                <div class="card">
+                    <div class="card-content">
+                        <h2 class="title is-4" id="date-of"></h2>
+                        <div class="content" id="weather">
+                            <span id="weather-icon"></span>
+                            <p class="title is-5"><span id="temp"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
             <section class="columns">
                 <div class="column">
                     <div class="card">
@@ -85,87 +99,84 @@
                             <h2 class="title is-4">Restaurants</h2>
                             <div class="content" id="restaurants">
                                 <ul class="restaurant-details">
-                                    <li class="label">Name: <span class="restaurant-name label-text"></span></li>
+                                    <li class="label"><span class="restaurant-name label-text"></span></li>
                                     <li class="label">Rating: <span class="restaurant-rating label-text"></span></li>
-                                    <li class="label">Address: <span class="restaurant-address label-text"></span></li>
+                                    <li class="label"><span class="restaurant-address label-text"></span></li>
                                 </ul>
 
                                 <ul class="restaurant-details">
-                                    <li class="label">Name: <span class="restaurant-name label-text"></span></li>
+                                    <li class="label"><span class="restaurant-name label-text"></span></li>
                                     <li class="label">Rating: <span class="restaurant-rating label-text"></span></li>
-                                    <li class="label">Address: <span class="restaurant-address label-text"></span></li>
+                                    <li class="label"><span class="restaurant-address label-text"></span></li>
                                 </ul>
 
                                 <ul class="restaurant-details">
-                                    <li class="label">Name: <span class="restaurant-name label-text"></span></li>
+                                    <li class="label"><span class="restaurant-name label-text"></span></li>
                                     <li class="label">Rating: <span class="restaurant-rating label-text"></span></li>
-                                    <li class="label">Address: <span class="restaurant-address label-text"></span></li>
+                                    <li class="label"><span class="restaurant-address label-text"></span></li>
                                 </ul>
 
                             </div>
                         </div>
                     </div>
+                </div>
 
+                <div class="column">
                     <div class="card">
                         <div class="card-content">
                             <h2 class="title is-4">Bars</h2>
                             <div class="content" id="bars">
                                 <ul class="bar-details">
-                                    <li class="label">Name: <span class="bar-name label-text"></span></li>
+                                    <li class="label"><span class="bar-name label-text"></span></li>
                                     <li class="label">Rating: <span class="bar-rating label-text"></span></li>
-                                    <li class="label">Address: <span class="bar-address label-text"></span></li>
+                                    <li class="label"><span class="bar-address label-text"></span></li>
                                 </ul>
                                 <ul class="bar-details">
-                                    <li class="label">Name: <span class="bar-name label-text"></span></li>
+                                    <li class="label"><span class="bar-name label-text"></span></li>
                                     <li class="label">Rating: <span class="bar-rating label-text"></span></li>
-                                    <li class="label">Address: <span class="bar-address label-text"></span></li>
+                                    <li class="label"><span class="bar-address label-text"></span></li>
                                 </ul>
                                 <ul class="bar-details">
-                                    <li class="label">Name: <span class="bar-name label-text"></span></li>
+                                    <li class="label"><span class="bar-name label-text"></span></li>
                                     <li class="label">Rating: <span class="bar-rating label-text"></span></li>
-                                    <li class="label">Adress: <span class="bar-address label-text"></span></li>
+                                    <li class="label"><span class="bar-address label-text"></span></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
+                </div>
 
+                <div class="column">
                     <div class="card">
                         <div class="card-content">
                             <h2 class="title is-4">Events</h2>
                             <div class="content" id="events">
                                 <ul class="event-details">
-                                    <li class="label">Event: <span class="event-name label-text"></span></li>
-                                    <li class="label">Date: <span class="event-date label-text"></span></li>
-                                    <li class="label">Price Range: <span class="event-price label-text"></span></li>
-                                    <li class="label">Purchase Link: <span class="event-link label-text"></span></li>
+                                    <li class="label"><span class="event-name label-text"></span></li>
+                                    <li class="label"><span class="event-date label-text"></span></li>
+                                    <li class="label"><span class="event-price label-text"></span></li>
+                                    <li class="label"><a href="#" target="_blank" class="event-link label-text"
+                                        >Purchase Here</a></li>
                                 </ul>
                                 <ul class="event-details">
-                                    <li class="label">Event: <span class="event-name label-text"></span></li>
-                                    <li class="label">Date: <span class="event-date label-text"></span></li>
-                                    <li class="label">Price Range: <span class="event-price label-text"></span></li>
-                                    <li class="label">Purchase Link: <span class="event-link label-text"></span></li>
+                                    <li class="label"><span class="event-name label-text"></span></li>
+                                    <li class="label"><span class="event-date label-text"></span></li>
+                                    <li class="label"><span class="event-price label-text"></span></li>
+                                    <li class="label"><a href="#" target="_blank" class="event-link label-text"
+                                        >Purchase Here</a></li>
                                 </ul>
                                 <ul class="event-details">
-                                    <li class="label">Event: <span class="event-name label-text"></span></li>
-                                    <li class="label">Date: <span class="event-date label-text"></span></li>
-                                    <li class="label">Price Range: <span class="event-price label-text"></span></li>
-                                    <li class="label">Purchase Link: <span class="event-link label-text"></span></li>
+                                    <li class="label"><span class="event-name label-text"></span></li>
+                                    <li class="label"><span class="event-date label-text"></span></li>
+                                    <li class="label"><span class="event-price label-text"></span></li>
+                                    <li class="label"><a href="#" target="_blank" class="event-link label-text"
+                                        >Purchase Here</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="column">
-                    <div class="card">
-                        <div class="card-content">
-                            <h2 class="title is-4" id="date-of"></h2>
-                            <div class="content" id="weather">
-                                <span id="weather-icon"></span>
-                                <p class="title is-5"><span id="temp"></span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </section>
             <div class="columns column is-centered">
                 <button class="button is-danger" id="go-back">
