@@ -18,8 +18,7 @@ $("document").ready(function () {
 
     $.ajax({
       type: "GET",
-      url:
-        "https://app.ticketmaster.com/discovery/v2/events?apikey=" +
+      url: "https://app.ticketmaster.com/discovery/v2/events?apikey=" +
         APIKeyEvents +
         "&city=" +
         city,
@@ -46,10 +45,10 @@ $("document").ready(function () {
         //price range
         console.log(
           "$" +
-            response._embedded.events[2].priceRanges[0].min +
-            " - " +
-            "$" +
-            response._embedded.events[2].priceRanges[0].max
+          response._embedded.events[2].priceRanges[0].min +
+          " - " +
+          "$" +
+          response._embedded.events[2].priceRanges[0].max
         );
 
         //MOUAD functions
