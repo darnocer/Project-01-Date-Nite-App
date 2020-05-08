@@ -40,8 +40,8 @@ $(document).ready(function () {
       var restaurantDetails = $(".restaurant-details");
       for (i = 0; i < 3; i++) {
         var nameRestaurant = [response.results[i].name];
-        var ratingRestaurant = [response.results[i].formatted_address];
-        var addressRestaurant = [response.results[i].rating];
+        var addressRestaurant = [response.results[i].formatted_address];
+        var ratingRestaurant = [response.results[i].rating];
         restaurantDetails[i].querySelector(
           ".restaurant-name"
         ).textContent = nameRestaurant;
@@ -78,8 +78,8 @@ $(document).ready(function () {
       var barDetails = $(".bar-details");
       for (i = 0; i < 3; i++) {
         var nameBar = [response.results[i].name];
-        var ratingBar = [response.results[i].formatted_address];
-        var addressBar = [response.results[i].rating];
+        var addressBar = [response.results[i].formatted_address];
+        var ratingBar = [response.results[i].rating];
         barDetails[i].querySelector(".bar-name").textContent = nameBar;
         barDetails[i].querySelector(".bar-rating").textContent = ratingBar;
         barDetails[i].querySelector(".bar-address").textContent = addressBar;
