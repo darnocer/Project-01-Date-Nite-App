@@ -7,6 +7,14 @@
   );
 }
 
+.label-text {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.restaurant-name {
+  font-weight: bold;
+}
+
 .card {
   margin: 10px;
 }
