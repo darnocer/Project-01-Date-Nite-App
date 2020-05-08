@@ -19,37 +19,6 @@
   margin: 10px;
 }
 
-#logo {
-  text-align: center !important;
-  font-family: "Pacifico", cursive;
-}
-
-#greeting {
-  font-family: "Pacifico", cursive;
-}
-
-.input {
-  margin: 10px;
-}
-
-.checkboxes {
-  margin: 10px;
-}
-
-#submit-button {
-  margin: 10px;
-}
-
-#user-inputs {
-  position: relative;
-  top: 150px;
-}
-
-#date-results {
-  position: relative;
-  top: 125px;
-}
-
 .unavailable {
   font-style: italic;
   color: lightgrey;
@@ -64,15 +33,54 @@
   font-weight: bold;
 }
 
+.card-content {
+  margin: auto;
+}
+
+.title {
+  font-family: "Pacifico", cursive;
+}
+
+.input {
+  margin: 10px;
+}
+
+.name {
+  font-size: 20px;
+}
+
+#logo {
+  text-align: center !important;
+  font-family: "Pacifico", cursive;
+}
+
+#greeting {
+  font-family: "Pacifico", cursive;
+}
+
+#submit-button {
+  margin: 10px;
+}
+
+#user-inputs {
+  position: relative;
+  top: 150px;
+}
+
+#date-results {
+  position: relative;
+  top: 95px;
+}
+
 ::-webkit-datetime-edit-text {
-  opacity: 0.5;
+  opacity: 0.6;
 }
 ::-webkit-datetime-edit-month-field {
-  opacity: 0.5;
+  opacity: 0.6;
 }
 ::-webkit-datetime-edit-day-field {
-  opacity: 0.5;
+  opacity: 0.6;
 }
 ::-webkit-datetime-edit-year-field {
-  opacity: 0.5;
+  opacity: 0.6;
 }

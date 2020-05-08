@@ -105,6 +105,7 @@ $(document).ready(function () {
       dataType: "json",
       success: function (response) {
         var results = response._embedded.events;
+        console.log(results);
 
         //MOUAD functions
         var eventDetails = $(".event-details");
