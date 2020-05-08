@@ -7,11 +7,18 @@
   );
 }
 
-.label-text {
-  font-family: "Red Hat Display", sans-serif;
+.navbar-brand {
+  text-align: center;
 }
 
-.restaurant-name {
+.label-text {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: normal;
+}
+
+.restaurant-name,
+.bar-name,
+.event-name {
   font-weight: bold;
 }
 
@@ -19,6 +26,15 @@
   margin: 10px;
 }
 
+.rating {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: bold;
+}
+
+.bar-rating,
+.restaurant-rating {
+  color: black;
+}
 .unavailable {
   font-style: italic;
   color: lightgrey;
@@ -29,7 +45,7 @@
   font-style: italic;
   color: red;
   font-size: 0.7em;
-  margin-top: 10px;
+  margin: auto;
   font-weight: bold;
 }
 
@@ -49,17 +65,23 @@
   font-size: 20px;
 }
 
+#validate {
+  height: 20px;
+}
+
 #logo {
   text-align: center !important;
   font-family: "Pacifico", cursive;
+  color: white !important;
 }
 
 #greeting {
   font-family: "Pacifico", cursive;
+  margin: 30px auto;
 }
 
 #submit-button {
-  margin: 10px;
+  margin: 40px auto;
 }
 
 #user-inputs {
@@ -69,7 +91,11 @@
 
 #date-results {
   position: relative;
-  top: 95px;
+  top: 85px;
+}
+
+#go-back {
+  margin-bottom: 50px;
 }
 
 ::-webkit-datetime-edit-text {
@@ -83,4 +109,7 @@
 }
 ::-webkit-datetime-edit-year-field {
   opacity: 0.6;
+}
+::-webkit-inner-spin-button {
+  display: none;
 }
