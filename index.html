@@ -5,9 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Date Nite</title>
 
+        <!--CSS-->
         <link type="text/css" rel="stylesheet" href="css/bulma.min.css" />
         <link type="text/css" rel="stylesheet" href="css/style.css" />
 
+        <!--Fonts-->
         <link
             rel="stylesheet"
             href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -19,9 +21,10 @@
             href="https://fonts.googleapis.com/css?family=Pacifico&display=swap"
             rel="stylesheet"> 
             
-        <link href="https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Red+Hat+Display:400,700&display=swap" rel="stylesheet">
 
 
+        <!--jQuery, javascript-->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
         <script
@@ -36,14 +39,12 @@
     <body>
         <nav class="navbar is-danger">
             <div class="navbar-brand is-size-2 column">
-                <p id="logo">date <span class="fas fa-heart"></span> nite<p>
+                <a href="index.html" id="logo">date <span class="fas fa-heart"></span> nite</a>
             </div>
         </nav>
 
         <main class="columns is-centered" id="user-inputs">
-
             <div class="column is-4 inputs">
-
                 <div class="columns is-centered">
                     <p class="subtitle is-3" id="greeting">Where do you want to
                         go?</p>
@@ -54,7 +55,9 @@
                     type="text"
                     placeholder="Enter City"
                     id="city-input"
+                    style="text-transform: capitalize;"
                     />
+
 
                 <input
                     class="input is-medium is-danger"
@@ -63,13 +66,11 @@
                     id="date-input"
                     />
 
-
-                    <div class="columns is-centered is-hidden">
-                        <p class="validate">Inputs required</p>
+                    <div class="columns is-centered" id="validate">
+                        <p class="validate is-hidden">Enter a city to continue</p>
                     </div>
-                
-                <div class = "columns is-centered">
 
+                <div class = "columns is-centered">
                     <button class="button is-danger" id="submit-button">
                         Plan My Date
                     </button>
@@ -82,7 +83,7 @@
             <div class="column">
                 <div class="card">
                     <div class="card-content has-text-centered">
-                        <h2 class="title is-4" id="date-of"></h2>
+                        <h2 class="title is-3" id="date-of"></h2>
                         <div class="content" id="weather">
                             <span id="weather-icon"></span>
                             <p class="subtitle label-text is-5"><span id="temp"></span></p>
@@ -96,25 +97,25 @@
                 <div class="column">
                     <div class="card">
                         <div class="card-content">
-                            <h2 class="title is-4">Restaurants</h2>
+                            <h2 class="title is-3">Restaurants</h2>
                             <div class="content" id="restaurants">
                                 <ul class="restaurant-details">
                                     <li class="label name"><span class="restaurant-name label-text"></span></li>
-                                    <li class="label">Rating: <span class="restaurant-rating label-text"></span></li>
+                                    <li class="label rating">Rating: <span class="restaurant-rating label-text"></span></li>
                                     <li class="label"><span class="restaurant-address label-text"></span></li>
                                 </ul>
                                 <hr>
 
                                 <ul class="restaurant-details">
                                     <li class="label name"><span class="restaurant-name label-text"></span></li>
-                                    <li class="label">Rating: <span class="restaurant-rating label-text"></span></li>
+                                    <li class="label rating">Rating: <span class="restaurant-rating label-text"></span></li>
                                     <li class="label"><span class="restaurant-address label-text"></span></li>
                                 </ul>
                                 <hr>
 
                                 <ul class="restaurant-details">
                                     <li class="label name"><span class="restaurant-name label-text"></span></li>
-                                    <li class="label">Rating: <span class="restaurant-rating label-text"></span></li>
+                                    <li class="label rating">Rating: <span class="restaurant-rating label-text"></span></li>
                                     <li class="label"><span class="restaurant-address label-text"></span></li>
                                 </ul>
                                
@@ -126,23 +127,23 @@
                 <div class="column">
                     <div class="card">
                         <div class="card-content">
-                            <h2 class="title is-4">Bars</h2>
+                            <h2 class="title is-3">Bars</h2>
                             <div class="content" id="bars">
                                 <ul class="bar-details">
                                     <li class="label name"><span class="bar-name label-text"></span></li>
-                                    <li class="label">Rating: <span class="bar-rating label-text"></span></li>
+                                    <li class="label rating">Rating: <span class="bar-rating label-text"></span></li>
                                     <li class="label"><span class="bar-address label-text"></span></li>
                                 </ul>
                                 <hr>
                                 <ul class="bar-details">
                                     <li class="label name"><span class="bar-name label-text"></span></li>
-                                    <li class="label">Rating: <span class="bar-rating label-text"></span></li>
+                                    <li class="label rating">Rating: <span class="bar-rating label-text"></span></li>
                                     <li class="label"><span class="bar-address label-text"></span></li>
                                 </ul>
                                 <hr>
                                 <ul class="bar-details">
                                     <li class="label name"><span class="bar-name label-text"></span></li>
-                                    <li class="label">Rating: <span class="bar-rating label-text"></span></li>
+                                    <li class="label rating">Rating: <span class="bar-rating label-text"></span></li>
                                     <li class="label"><span class="bar-address label-text"></span></li>
                                 </ul>
                             </div>
@@ -153,7 +154,7 @@
                 <div class="column">
                     <div class="card">
                         <div class="card-content">
-                            <h2 class="title is-4">Events</h2>
+                            <h2 class="title is-3">Events</h2>
                             <div class="content" id="events">
                                 <ul class="event-details">
                                     <li class="label name"><span class="event-name label-text"></span></li>
@@ -190,6 +191,7 @@
                 </button>
             </div>
         </div>
+
 
 
     </html>
