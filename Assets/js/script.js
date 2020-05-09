@@ -139,10 +139,13 @@ $(document).ready(function () {
           for (var i = 0; i < 3; i++) {
             var nameEvent = results[i].name;
             var dateEvent = results[i].dates.start.localDate;
-            var priceEventMin = results[i].priceRanges[0].min;
-            var priceEventMax = results[i].priceRanges[0].max;
-            eventDetails[i].querySelector(".event-price").textContent =
-              "$" + priceEventMin + "-" + "$" + priceEventMax;
+
+            if (results[i].priceRanges !== undefined) {
+              var priceEventMin = results[i].priceRanges[0].min;
+              var priceEventMax = results[i].priceRanges[0].max;
+              eventDetails[i].querySelector(".event-price").textContent =
+                "$" + priceEventMin + "-" + "$" + priceEventMax;
+            }
 
             var linkEvent = results[i].url;
 
