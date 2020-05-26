@@ -1,5 +1,9 @@
 # Project 1: Date Nite App
 
+## Deployed Site
+
+https://darnocer.github.io/Project-01-Date-Nite-App/
+
 ## DATE NITE: A One-Click solution to planning dates
 
 - Enter the city (required) and the planned date (optional)
