@@ -39,7 +39,7 @@ Date Nite is a one-click solution to planning dates! Simply enter where and when
 
 ## Contributors
 
-- **HTML/CSS**: Darian Nocera [![Follow on Github](https://img.shields.io/github/followers/darnocer?label=Follow&style=social)](http://www.github.com/darnocer)
+- **HTML/CSS and Weather API**: Darian Nocera [![Follow on Github](https://img.shields.io/github/followers/darnocer?label=Follow&style=social)](http://www.github.com/darnocer)
 - **Ticket Master API**: Mouad Kharbach [![Follow on Github](https://img.shields.io/github/followers/siirmouad?label=Follow&style=social)](http://www.github.com/siirmouad)
 
 - **Google Places API**: Brandon Formby [![Follow on Github](https://img.shields.io/github/followers/BFormbs?label=Follow&style=social)](http://www.github.com/BFormbs)
