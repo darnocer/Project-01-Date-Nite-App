@@ -47,6 +47,7 @@
   font-size: 0.7em;
   margin: auto;
   font-weight: bold;
+  color: #f14668;
 }
 
 .card-content {
@@ -63,6 +64,12 @@
 
 .name {
   font-size: 20px;
+}
+
+.note {
+  font-size: 10px;
+  font-style: italic;
+  color: #f14668;
 }
 
 #validate {
