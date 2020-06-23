@@ -15,7 +15,7 @@ $(document).ready(function () {
 
     // get user input
     userCity = $("#city-input").val();
-    // userCity.text(str.charAt(0).toUpperCase() + str.substr(1).toLowerCase());
+
     userDate = $("#date-input").val();
 
     // force user to enter city
@@ -217,6 +217,9 @@ $(document).ready(function () {
   // formats user input date to day of week - month - day
   function formatDate() {
     var formattedDate = moment(userDate, "YYYY-MM-DD").format("dddd, MMMM D");
+    userCity =
+      userCity.charAt(0).toUpperCase() + userCity.substr(1).toLowerCase();
+    console.log(userCity);
 
     // if no date entered, just display city name
     if (formattedDate === "Invalid date") {
