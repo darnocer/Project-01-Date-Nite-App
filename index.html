@@ -44,11 +44,9 @@
         </nav>
 
         <main class="columns is-centered" id="user-inputs">
-            <div class="column is-4 inputs">
-                <div class="columns is-centered">
+            <div class="column is-4 inputs has-text-centered">
                     <p class="subtitle is-3" id="greeting">Where do you want to
                         go?</p>
-                </div>
 
                 <input
                     class="input is-medium is-danger"
@@ -58,23 +56,18 @@
                     style="text-transform: capitalize;"
                     />
 
-
                 <input
                     class="input is-medium is-danger"
                     type="date"
                     placeholder="Enter Date"
                     id="date-input"
                     />
+                    
+                <p class="validate is-hidden" id="validate">Enter a city to continue</p>
 
-                    <div class="columns is-centered" id="validate">
-                        <p class="validate is-hidden">Enter a city to continue</p>
-                    </div>
-
-                <div class = "columns is-centered">
-                    <button class="button is-danger" id="submit-button">
+                    <button class="button is-danger is-centered" id="submit-button">
                         Plan My Date
                     </button>
-                </div>
             </div>
         </main>
 
@@ -155,6 +148,7 @@
                     <div class="card">
                         <div class="card-content">
                             <h2 class="title is-3">Events</h2>
+                            <p class="note">Available events for selected date may be limited at this time. Displaying top events for location.</p>
                             <div class="content" id="events">
                                 <ul class="event-details">
                                     <li class="label name"><span class="event-name label-text"></span></li>
@@ -185,7 +179,7 @@
                 </div>
 
             </section>
-            <div class="columns column is-centered">
+            <div class="columns column is-centered has-text-centered">
                 <button class="button is-danger" id="go-back">
                     Plan Another Date
                 </button>
