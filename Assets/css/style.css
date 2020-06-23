@@ -78,10 +78,11 @@
 #greeting {
   font-family: "Pacifico", cursive;
   margin: 30px auto;
+  text-align: center;
 }
 
 #submit-button {
-  margin: 40px auto;
+  margin: 10px auto;
 }
 
 #user-inputs {
